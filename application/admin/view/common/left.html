@@ -1,0 +1,70 @@
+<div class="layui-side layui-side-menu">
+        <div class="layui-side-scroll">
+          <div class="layui-logo" lay-href="{:url('admin/home/console')}">
+            <span>layuiAdmin</span>
+          </div>
+          
+          <ul class="layui-nav layui-nav-tree" lay-shrink="all" id="LAY-system-side-menu" lay-filter="layadmin-system-side-menu">
+            <li data-name="home" class="layui-nav-item layui-nav-itemed">
+              <a href="javascript:;" lay-tips="主页" lay-direction="2">
+                <i class="layui-icon layui-icon-home"></i>
+                <cite>主页</cite>
+              </a>
+              <dl class="layui-nav-child">
+                <dd data-name="console" class="layui-this">
+                  <a lay-href="{:url('admin/home/console')}">控制台</a>
+                </dd>
+                <dd data-name="console">
+                  <a lay-href="{:url('admin/home/homepage1')}">主页一</a>
+                </dd>
+              </dl>
+            </li>
+            <li data-name="home" class="layui-nav-item">
+              <a href="javascript:;" lay-tips="商品管理" lay-direction="2">
+                <i class="layui-icon layui-icon-home"></i>
+                <cite>商品管理</cite>
+              </a>
+              <dl class="layui-nav-child">
+                <dd data-name="console" class="layui-this">
+                  <a lay-href="{:url('admin/goods/list')}">商品列表</a>
+                </dd>
+                <dd data-name="console">
+                  <a lay-href="{:url('admin/brand/list')}">商品品牌</a>
+                </dd>
+              </dl>
+            </li>
+
+            <li data-name="app" class="layui-nav-item">
+              <a href="javascript:;" lay-tips="应用" lay-direction="2">
+                <i class="layui-icon layui-icon-app"></i>
+                <cite>应用</cite>
+              </a>
+              <dl class="layui-nav-child">
+                
+                <dd data-name="content">
+                  <a href="javascript:;">内容系统</a>
+                  <dl class="layui-nav-child">
+                    <dd data-name="list"><a lay-href="{:url('admin/content/list')}">文章列表</a></dd>
+                    <dd data-name="tags"><a lay-href="{:url('admin/content/tags')}">分类管理</a></dd>
+                    <dd data-name="comment"><a lay-href="{:url('admin/content/comment')}">评论管理</a></dd>
+                  </dl>
+                </dd>
+                <dd data-name="forum">
+                  <a href="javascript:;">社区系统</a>
+                  <dl class="layui-nav-child">
+                    <dd data-name="list"><a lay-href="{:url('admin/forum/list')}">帖子列表</a></dd>
+                    <dd data-name="replys"><a lay-href="{:url('admin/forum/replays')}">回帖列表</a></dd>
+                  </dl>
+                </dd>
+                <dd>
+                  <a lay-href="{:url('admin/message/index')}">消息中心</a>
+                </dd>
+                <dd data-name="workorder">
+                  <a lay-href="{:url('admin/workorder/list')}">工单系统</a>
+                </dd>
+              </dl>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
